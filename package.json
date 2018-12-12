@@ -1,0 +1,24 @@
+{
+  "name": "tigris-server",
+  "version": "1.0.0",
+  "description": "server to pass user input to machine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamprasadhNatarajan/Tigris-UX.git"
+  },
+  "author": "jidoka-technologies",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RamprasadhNatarajan/Tigris-UX/issues"
+  },
+  "homepage": "https://github.com/RamprasadhNatarajan/Tigris-UX#readme",
+  "dependencies": {
+    "alert-node": "^1.2.3",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  }
+}
