@@ -14,25 +14,17 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/userInterface.html");
 });
 
+app.get("/changedInput",(req,res)=>{
+	res.write(input.toString());
+	res.end();
+});
+
 app.post("/changeInput", (req, res) => {
-    input = req.body.command;
+    input = req.body.Mode;
 	alert("command changed");
     res.sendFile(__dirname + "/userInterface.html");
 });
 
-var server = http.createServer(function(request,response){
-	response.writeHead(200,{
-		'Content-Type' : 'text/plain'
-	});
-	console.log("hitted ");
-	response.write(""+input);
-	response.end();
-});
-
 app.listen(port1, () => {
     console.log("Server listening on port " + port1);
-});
-
-server.listen(port2, () => {
-    console.log("Server listening on port " + port2);
 });

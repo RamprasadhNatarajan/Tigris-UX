@@ -8,9 +8,10 @@
     <body>
         <h1>Tigris UserInterface</h1>
         <form method="post" action="/changeInput">
-            <label>Enter command</label><br>
-            <input type="text" name="command" placeholder="Enter Command" required>
-            <input type="submit" value="post command">
+            <input type="radio" name="Mode" value=10 checked> Auto mode<br>
+			<input type="radio" name="Mode" value=20> Emergency Mode<br>
+			<input type="radio" name="Mode" value=90> Manual Mode  <br>
+            <input type="submit" value="Change Mode">
         </form>
     </body>
 </html>
