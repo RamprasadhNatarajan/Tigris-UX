@@ -2,7 +2,6 @@ var express = require("express");
 var http =require("http");
 var app = express();
 var port1 = 8888;
-var port2 = 8989;
 var bodyParser = require('body-parser');
 var input = -8;
 var alert = require("alert-node");
@@ -15,6 +14,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/changedInput",(req,res)=>{
+	res.writeHead(200,{
+		'Content-Type' : 'text/plain'
+	});
 	res.write(input.toString());
 	res.end();
 });
