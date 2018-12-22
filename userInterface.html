@@ -3,15 +3,27 @@
 <html>
     <head>
         <title>Tigris UserInterface</title>
-    </head>
-
-    <body>
+		<meta charset = "UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="/scripts/tigris_ux.js"></script>
+		<link rel = "stylesheet" type = "text/css" href = "style/myStyle.css">
+	</head>
+<body>
+		<div class="header">
         <h1>Tigris UserInterface</h1>
-        <form method="post" action="/changeInput">
-            <input type="radio" name="Mode" value="Auto_mode" checked> Auto mode<br>
-			<input type="radio" name="Mode" value="Emergency_Mode"> Emergency Mode<br>
-			<input type="radio" name="Mode" value="Manual_Mode"> Manual Mode  <br>
-            <input type="submit" value="Change Mode">
+		</div>
+		<div class="notification_display">
+		<p id="Notification">Current State : </p>
+	        <input id = "radio-Auto_Mode"type="radio" name="Mode" value="Auto_Mode" > Auto mode<br>
+			<input id = "radio-Manual_Mode" type="radio" name="Mode" value="Manual_Mode"> Manual Mode  <br>
+			<input id = "radio-Emergency_Mode" type="radio" name="Mode" value="Emergency_Mode"> Emergency Mode<br>
+		</div>
+		<div class="mode_buttons">
+		<p>Click on a Button</p>
+		<button type = "button" value = "Auto_mode" onclick="changeState('Auto_Mode')"> Auto_mode </button>
+		<button type = "button" value = "Manual_mode" onclick="changeState('Manual_Mode')"> Manual_mode </button>
+		<button type = "button" value = "Emergency_Mode" onclick="changeState('Emergency_Mode')"> Emergency_Mode </button>
+			</div>
         </form>
     </body>
 </html>
