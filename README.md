@@ -18,7 +18,11 @@ In command change directory to the Tigris-UX folder, then execute below command.
 
 Launch localhost:8888 in browser.
 
-Select the opttion from radio button list and click post command.
+Click the button which mode you wish the machine to change.
+
+Text current mode will get changed with the selected option.
+
+and radio button for the selected button will get highlighted
 
 Open another cmd prompt and use curl command at port 8888
 
